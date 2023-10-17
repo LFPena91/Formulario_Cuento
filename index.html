@@ -1,40 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8"> <!--Esta parte del código me permite que se vean las tildes de forma adecuada-->
     <title>Formulario - Cuento</title>
     <link rel="stylesheet" href="Estilo.css">
   </head>
 <body>
-    <form action="#" method="post">
+    <form action="Cuento.php" method="post">
         <ul>
             <li>
-                <label for="nombre">Nombre(s):</label>
-                <input type="text" id="nombre" name="user_nombre"/>
-            </li>
-            <li>
-                <label for="apellido">Apellido(s):</label>
-                <input type="text" id="apellido" name="user_apellido"/>
-            </li>
-            <li>
-                <label for="apodo">Apodo:</label>
-                <input type="text" id="apodo" name="user_apodo"/>
-            </li>
-            <li>
-                <label for="color_cabello">Color de cabello:</label>
-                <input type="color" id="color_cabello" name="user_color_cabello"/>
-            </li>
-            <li>
-                <label for="color_ojos">Color de los ojos:</label>
-                <input type="color" id="color_ojos" name="user_color_ojos"/>
-            </li>
-            <li>
-                <label for="edad">Edad:</label>
-                <input type="number" id="edad" name="user_edad"/>
-            </li>
-            <li>
-                <label for="hobby">Hobby (Solo 1):</label>
-                <input type="text" id="hobby" name="user_hobby"/>
+                Nombre(s):<input type="text" name="nombre" value="">
+                Apellidos:<input type="text" name="apellidos" value="">
+                Apodo:<input type="text" name="apodo" value="">
+                Color de cabello:<input type="text" name="colorCabello" value="">
+                Color de ojos:<input type="text" name="colorOjos" value="">
+                Edad:<input type="int" name="edad" value="">
+                Hobby (solo uno):<input type="text" name="hobby" value="">
+            
             </li>
             <li class="button">
                 <button type="submit">Enviar</button>

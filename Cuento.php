@@ -8,15 +8,38 @@
     <h1>Este es tu cuento</h1>
     <p>
         <?php
-        $nombre = $_GET['user_nombre'];
-        $apellido = $_GET['user_apellido'];
-        $apodo = $_GET['user_apodo'];
-        $ncolor_cabello = $_GET['user_color_cabello'];
-        $color_ojos = $_GET['user_color_ojos'];
-        $edad = $_GET['user_edad'];
-        $hobby = $_GET['user_hobby'];
+        $nombre = $_POST['nombre'];
+        $apellidos = $_POST['apellidos'];
+        $apodo = $_POST['apodo'];
+        $colorCabello = $_POST['colorCabello'];
+        $colorOjos = $_POST['colorOjos'];
+        $edad = $_POST['edad'];
+        $hobby = $_POST['hobby'];
 
-        echo "el nombre es: " . $nombre;
+        /*if ($edad < 4){
+           $n = 0;
+        }elseif ($edad >= 4 and $edad <12 ){
+            $n = 1;
+        }elseif ($edad >= 12 and $edad < 21){
+            $n = 2;
+        }else{
+            $n = 3;
+        }*/
+
+        switch($edad){
+            case $edad < 4:
+                echo "Usted no debe saber leer";
+                break;
+            case $edad >= 4 and $edad <12:
+                echo "Cuento 1";
+                break;
+            case $edad >= 12 and $edad < 21:
+                echo "Cuento 2";
+                break;
+            default:
+                echo "Cuento 3";
+
+        }
         ?>
 
 
