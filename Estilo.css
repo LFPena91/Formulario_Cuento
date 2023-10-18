@@ -1,1 +1,12 @@
-
+#cuentoUno {
+    font-family: Lucida Sans;
+    background-color: black;
+    color: aliceblue;
+}
+#cuentoDos {
+    background-color:aqua;
+    color: black;
+}
+#cuentoTres {
+    background-color: aquamarine;
+}
