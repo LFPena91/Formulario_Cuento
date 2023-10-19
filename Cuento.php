@@ -29,7 +29,7 @@
 
         switch($edad){
             case $edad < 4:
-                echo "Usted no debe saber leer";
+                echo "<div id='menor'><p>Lo sentimos, no tenemos cuentos para personas de esta edad</p></div>";
                 break;
             case $edad >= 4 and $edad <12:
                 echo "<div id= 'cuentoUno'>

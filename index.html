@@ -6,22 +6,33 @@
     <link rel="stylesheet" href="Estilo.css">
   </head>
 <body>
+    <h1>Formulario: Crea tu cuento.......</h1>
     <form action="Cuento.php" method="post">
-        <ul>
-            <li>
-                Nombre(s):<input type="text" name="nombre" value="">
-                Apellidos:<input type="text" name="apellidos" value="">
-                Apodo:<input type="text" name="apodo" value="">
-                Color de cabello:<input type="text" name="colorCabello" value="">
-                Color de ojos:<input type="text" name="colorOjos" value="">
-                Edad:<input type="int" name="edad" value="">
-                Hobby (solo uno):<input type="text" name="hobby" value="">
-            
-            </li>
-            <li class="button">
-                <button type="submit">Enviar</button>
-                <button type="reset">Borrar</button>
-            </li>
-        </ul>
+        
+        <label for="nombre">Nombre(s):</label>
+            <input type="text" name="nombre" placeholder="¿Cuál es tú nombre?">
+
+        <label for="apellidos">Apellidos:</label>   
+            <input type="text" name="apellidos" placeholder="¿Cuales son tus apellidos?">
+
+        <label for="apodo">Apodo:</label>
+            <input type="text" name="apodo" placeholder="¿Cuál es tú apodo?">
+
+        <label for="colorCabello">Color de cabello:</label>
+            <input type="text" name="colorCabello" placeholder="¿De qué color es tu cabello?">
+
+        <label for="colorOjos">Color de ojos:</label>
+            <input type="text" name="colorOjos" placeholder="¿De qué color son tus ojos?">
+
+        <label for="edad">Edad:</label>
+            <input type="int" name="edad" placeholder="¿Cuántos años tienes?">
+
+        <label for="hobby">Hobby:</label>
+            <input type="text" name="hobby" placeholder="¿Cuál es tú hobby favorito?(solo uno)">
+           
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+           
+        
     </form>
 </body>
