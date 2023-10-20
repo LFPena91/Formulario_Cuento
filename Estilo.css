@@ -36,20 +36,62 @@ button:hover{
     cursor: pointer;
 }
 h1{
-    margin-left: 500px;
+    text-align: center;
     margin-top: 20px;
     font-family:lucida sans;
     color: #2ECC71;
 }
+h3{
+    text-align: center;
+}
+p{
+    margin: 20px;
+}
+img{
+    margin: 20px;
+    margin-top: 0px;
+    float: left;
+    border-radius: 10%;
+}
 #cuentoUno {
     font-family: Lucida Sans;
-    background-color: black;
-    color: aliceblue;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #FFAB91;
+    color: #01579B;
 }
 #cuentoDos {
-    background-color:aqua;
-    color: black;
+    font-family: Lucida Sans;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #80DEEA;
+    color: #1A237E;
 }
 #cuentoTres {
-    background-color: aquamarine;
+    font-family: Lucida Sans;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #CFD8DC;
+    color: #00796B;
+}
+#menor {
+    text-align: center;
+    margin-top: 20px;
+    font-family:lucida sans;
+    color: #3498DB; 
+    font-size: 28px;
+}
+#SadFace {
+    float: none;
+}
+#volver {
+    width: 50px;
+    float: none;
+    margin:0%
 }

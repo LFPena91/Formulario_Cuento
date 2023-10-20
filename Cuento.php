@@ -6,7 +6,7 @@
     <title>Cuento</title>
 </head>
 <body>
-    <h1>Este es tu cuento</h1>
+    <h1><a href="index.html"><img id='volver' src='imagenes/Volver.png' title='Volver'></a> Este es tu cuento .....</h1>
     <p>
         <?php
         $nombre = $_POST['nombre'];
@@ -29,7 +29,8 @@
 
         switch($edad){
             case $edad < 4:
-                echo "<div id='menor'><p>Lo sentimos, no tenemos cuentos para personas de esta edad</p></div>";
+                echo "<div id='menor'><p>Lo sentimos, no tenemos cuentos para personas de esta edad</p>
+                <p><img id='SadFace' src='imagenes/SadFace.jpg'></p></div>";
                 break;
             case $edad >= 4 and $edad <12:
                 echo "<div id= 'cuentoUno'>
@@ -62,35 +63,34 @@
                 echo "<div id='cuentoDos'> 
                 <h3> El zar ". $nombre. " y la camisa ". $colorCabello. "</h3>
                 <img src='imagenes/Zar.jpg'><p>El zar ". $nombre. " ". $apellidos. " estaba enfermo y dijo: - Daré la mitad de mi reino a quien me cure. 
-                Entonces, se reunieron todos los sabios y empezaron a discutir cómo curar al zar. Nadie sabía que hacer. 
+                Entonces, se reunieron todos los sabios y empezaron a discutir cómo curar al zar. Nadie sabía que hacer.<br/><br/>
                 Sólo el sabio ". $apodo. " afirmó que se podía curar al zar. - Si se encuentra a un hombre feliz y que le guste ". $hobby. " -dijo-, 
-                se le quita la camisa ". $colorCabello. " y se le pone al zar, éste se curará. El zar ". $nombre. 
-                " mandó que buscaran a un hombre feliz y que le gustara ". $apodo. " por todo su reino, pero por mucho que ". $apodo. 
-                " y sus emisarios cabalgaron por todos sus territorios, no pudieron encontrarlo. No había ni uno que estuviese satisfecho de todo. 
+                se le quita la camisa ". $colorCabello. " y se le pone al zar, éste se curará.<br/><br/> El zar ". $nombre. 
+                " mandó que buscaran a un hombre feliz y que le gustara ". $hobby. " por todo su reino, pero por mucho que ". $apodo. 
+                " y sus emisarios cabalgaron por todos sus territorios, no pudieron encontrarlo.<br/><br/> No había ni uno que estuviese satisfecho del todo. 
                 Uno era rico, pero estaba enfermo; otro gozaba de buena salud, pero era pobre; otro era rico y gozaba de buena salud, 
-                pero su mujer era malvada, o no le gustaba ". $hobby. "; todos tenían algún motivo de queja. 
+                pero su mujer era malvada, o no le gustaba ". $hobby. "; todos tenían algún motivo de queja.<br/><br/> 
                 Un día, a última hora de la tarde, el hijo de ". $nombre. " pasaba junto a una pequeña isba y oyó a alguien que decía: 
                 - Gracias a Dios he trabajado bastante, he comido cuanto necesitaba y ahora me voy a ". $hobby. ". 
                 ¿Qué más puedo pedir? El hijo del zar se alegró, ordeno que le quitasen la camisa ". $colorCabello. 
                 " a ese hombre, que le diesen una cantidad de dinero a modo de compensación, todo el que quisiera, y que llevaran la camisa "
-                . $colorCabello. " al zar. Los emisarios fueron a ver al hombre feliz y quisieron quitarle la camisa ". $colorCabello. "; 
+                . $colorCabello. " al zar.<br/><br/> Los emisarios fueron a ver al hombre feliz y quisieron quitarle la camisa ". $colorCabello. "; 
                 pero ese hombre feliz era tan pobre que ni siquiera tenía camisa ". $colorOjos. ".</p></div>";
                 break;
             default:
                 echo "<div id='cuentoTres'>
                 <h3>El sabio ". $nombre. " ". $apellidos. " y el escorpión ". $colorOjos. "</h3>
                 <img src='imagenes/Sabio.jpeg'><p>Había una vez un sabio monje llamado ". $nombre. " que paseaba junto a su discípulo ". $apodo. 
-                " en las orilla del río ". $colorCabello. ". Durante su ". $hobby. ", vio como un escorpión ". $colorOjos. 
-                " había caído al agua y se estaba ahogando, y tomó la decisión de salvarlo sacándolo del agua. 
+                " en las orilla del río ". $colorCabello. ".<br/><br/> Durante su ". $hobby. ", vio como un escorpión ". $colorOjos. 
+                " había caído al agua y se estaba ahogando, y tomó la decisión de salvarlo sacándolo del agua.<br/><br/> 
                 Pero una vez en su mano, el animal le picó.
-                El dolor hizo que ". $nombre. " soltara al escorpión, que volvió a caer al agua. 
+                El dolor hizo que ". $nombre. " soltara al escorpión, que volvió a caer al agua.<br/><br/>  
                 El sabio volvió a intentar sacarlo, pero de nuevo el animal le picó provocando que le dejara caer. 
-                Ello ocurrió una tercera vez. El dicipulo ". $apodo. ", preocupado, le preguntó por qué continuaba haciéndolo si el animal siempre le picaba.
+                Ello ocurrió una tercera vez. El dicipulo ". $apodo. ", preocupado, le preguntó por qué continuaba haciéndolo si el animal siempre le picaba.<br/><br/> 
                 ". $nombre. ", sonriendo, le respondió que la naturaleza del escorpión". $colorOjos. " es la de picar, 
                 mientras que la de él no era otra que la de ayudar. Dicho esto el monje tomó una hoja y, 
-                con su ayuda, consiguió sacar al escorpión ". $colorOjos. " del agua ". $colorCabello. 
+                con su ayuda, consiguió sacar al escorpión ". $colorOjos. " del rio ". $colorCabello. 
                 " y salvarlo sin sufrir su picadura</p></div>";
-
         }
         ?>
 
