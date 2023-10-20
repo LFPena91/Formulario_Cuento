@@ -9,6 +9,7 @@
     <h1><a href="index.html"><img id='volver' src='imagenes/Volver.png' title='Volver'></a> Este es tu cuento .....</h1>
     <p>
         <?php
+        #Asignamos las variables del formulario en HTML, a PHP
         $nombre = $_POST['nombre'];
         $apellidos = $_POST['apellidos'];
         $apodo = $_POST['apodo'];
@@ -17,6 +18,7 @@
         $edad = $_POST['edad'];
         $hobby = $_POST['hobby'];
 
+        #Iniciamente habia pensado hacer un IF, asignado a una variable n, un numero del 0 al 3, según la edad
         /*if ($edad < 4){
            $n = 0;
         }elseif ($edad >= 4 and $edad <12 ){
@@ -27,13 +29,14 @@
             $n = 3;
         }*/
 
-        switch($edad){
-            case $edad < 4:
+        switch($edad){ #Se define según la edad imprimir un cuento en especifico.
+            case $edad < 4: 
                 echo "<div id='menor'><p>Lo sentimos, no tenemos cuentos para personas de esta edad</p>
                 <p><img id='SadFace' src='imagenes/SadFace.jpg'></p></div>";
                 break;
-            case $edad >= 4 and $edad <12:
-                echo "<div id= 'cuentoUno'>
+            case $edad >= 4 and $edad <12: 
+                #creo un Id en cada cuento, para editarlo en CSS individualmente.
+                echo "<div id= 'cuentoUno'> 
                 <h3> La gran aventura de ". $apodo. "</h3>
                 <img src='imagenes/Patitas.jpeg'><p>En una acogedora colonia subterránea, vivía ". $nombre. " ". $apellidos. ", 
                 un pequeño hámster de ojos ". $colorOjos. " que siempre se escondía en su madriguera cuando veía una sombra o escuchaba un ruido extraño. 
@@ -93,11 +96,6 @@
                 " y salvarlo sin sufrir su picadura</p></div>";
         }
         ?>
-
-
     </p>
-
-
-
 </body>
 </html>
