@@ -38,8 +38,10 @@
                 #creo un Id en cada cuento, para editarlo en CSS individualmente.
                 echo "<div id= 'cuentoUno'> 
                 <h3> La gran aventura de ". $apodo. "</h3>
-                <img src='imagenes/Patitas.jpeg'><p>En una acogedora colonia subterránea, vivía ". $nombre. " ". $apellidos. ", 
-                un pequeño hámster de ojos ". $colorOjos. " que siempre se escondía en su madriguera cuando veía una sombra o escuchaba un ruido extraño. 
+                <img src='imagenes/Patitas.jpeg'>
+                <p>En una acogedora colonia subterránea, vivía ". $nombre. " ". $apellidos. ", 
+                un pequeño hámster de ojos ". $colorOjos. " que siempre se escondía en su madriguera 
+                cuando veía una sombra o escuchaba un ruido extraño. 
                 Y allí se quedaba, ". $hobby. ", a ver si se le pasaba el miedo.<br/>
                 <br/>—¡ ". $apodo. " (como le decián sus amigos), no puedes esconderte siempre! —le decía Bolita, 
                 una hámster anciana con pelaje ". $colorCabello. " —. El mundo es grande y hermoso, y está esperando ser descubierto. 
@@ -49,13 +51,17 @@
                 Todos los hámsteres empezaron a correr de acá para allá.<br/>              
                 <br/>—¡Tenemos que hacer algo! —gritó ". $apodo. " , olvidando por un momento su miedo. <br/>             
                 <br/>Guiado por Bolita, ". $nombre. " se aventuró en el bosque oscuro. Los árboles se alzaban altos y amenazantes. 
-                Sus ramas se entrelazaban como manos esqueléticas y el viento silbaba entre las hojas secas, creando un murmullo constante.<br/>            
+                Sus ramas se entrelazaban como manos esqueléticas y el viento silbaba entre las hojas secas,
+                 creando un murmullo constante.<br/>            
                 <br/>—Debemos buscar al águila en la montaña —dijo Bolita—. Ella nos ayudará.<br/>
                 <be/>Fue un viaje largo y duro. Lo que más asustó a ". $apodo. " fue su paso por el borde de un río caudaloso. 
-                Menos mal que recordó una historia que había leído y se lo ocurrió construir una balsa con ramas y hojas y pudo remar con todas sus fuerzas.<br/>           
-                <br/>Al llegar a la montaña del águila, ". $apodo. " pidió ayuda. El águila, viendo el coraje del pequeño hámster, aceptó.<br/>
+                Menos mal que recordó una historia que había leído y se lo ocurrió construir 
+                una balsa con ramas y hojas y pudo remar con todas sus fuerzas.<br/>           
+                <br/>Al llegar a la montaña del águila, ". $apodo. " pidió ayuda. 
+                El águila, viendo el coraje del pequeño hámster, aceptó.<br/>
                 <br/>Mientras tanto, en la colonia, el zorro intentaba cavar para llegar a los hámsteres. 
-                Pero estos, recordando las historias que ". $nombre. "  les leía, idearon trampas y pasadizos falsos para confundirlo.<br/>
+                Pero estos, recordando las historias que ". $nombre. "  
+                les leía, idearon trampas y pasadizos falsos para confundirlo.<br/>
                 <br/>Cuando ". $apodo. " regresó con el águila, el zorro, al ver a la majestuosa ave, huyó despavorido.<br/>
                 <br/>La colonia celebró la valentía de ". $nombre. " , y este, con una sonrisa en su rostro, 
                 se dio cuenta de que el verdadero valor no se encuentra en el tamaño, sino en el corazón.</br>
@@ -65,15 +71,19 @@
             case $edad >= 12 and $edad < 21:
                 echo "<div id='cuentoDos'> 
                 <h3> El zar ". $nombre. " y la camisa ". $colorCabello. "</h3>
-                <img src='imagenes/Zar.jpg'><p>El zar ". $nombre. " ". $apellidos. " estaba enfermo y dijo: - Daré la mitad de mi reino a quien me cure. 
-                Entonces, se reunieron todos los sabios y empezaron a discutir cómo curar al zar. Nadie sabía que hacer.<br/><br/>
-                Sólo el sabio ". $apodo. " afirmó que se podía curar al zar. - Si se encuentra a un hombre feliz y que le guste ". $hobby. " -dijo-, 
-                se le quita la camisa ". $colorCabello. " y se le pone al zar, éste se curará.<br/><br/> El zar ". $nombre. 
-                " mandó que buscaran a un hombre feliz y que le gustara ". $hobby. " por todo su reino, pero por mucho que ". $apodo. 
-                " y sus emisarios cabalgaron por todos sus territorios, no pudieron encontrarlo.<br/><br/> No había ni uno que estuviese satisfecho del todo. 
-                Uno era rico, pero estaba enfermo; otro gozaba de buena salud, pero era pobre; otro era rico y gozaba de buena salud, 
-                pero su mujer era malvada, o no le gustaba ". $hobby. "; todos tenían algún motivo de queja.<br/><br/> 
-                Un día, a última hora de la tarde, el hijo de ". $nombre. " pasaba junto a una pequeña isba y oyó a alguien que decía: 
+                <img src='imagenes/Zar.jpg'>
+                <p>El zar ". $nombre. " ". $apellidos. " estaba enfermo y dijo: - Daré la mitad de mi reino a quien me cure. 
+                Entonces, se reunieron todos los sabios y empezaron a discutir cómo curar al zar. Nadie sabía que hacer.<br/>
+                <br/>Sólo el sabio ". $apodo. " afirmó que se podía curar al zar. 
+                - Si se encuentra a un hombre feliz y que le guste ". $hobby. " -dijo-, 
+                se le quita la camisa ". $colorCabello. " y se le pone al zar, éste se curará.<br/>
+                <br/> El zar ". $nombre. " mandó que buscaran a un hombre feliz y que le gustara ". $hobby. " 
+                por todo su reino, pero por mucho que ". $apodo. " y sus emisarios cabalgaron por todos sus territorios, 
+                no pudieron encontrarlo.<br/>
+                <br/> No había ni uno que estuviese satisfecho del todo. Uno era rico, pero estaba enfermo; 
+                otro gozaba de buena salud, pero era pobre; otro era rico y gozaba de buena salud, 
+                pero su mujer era malvada, o no le gustaba ". $hobby. "; todos tenían algún motivo de queja.<br/>
+                <br/>Un día, a última hora de la tarde, el hijo de ". $nombre. " pasaba junto a una pequeña isba y oyó a alguien que decía: 
                 - Gracias a Dios he trabajado bastante, he comido cuanto necesitaba y ahora me voy a ". $hobby. ". 
                 ¿Qué más puedo pedir? El hijo del zar se alegró, ordeno que le quitasen la camisa ". $colorCabello. 
                 " a ese hombre, que le diesen una cantidad de dinero a modo de compensación, todo el que quisiera, y que llevaran la camisa "
